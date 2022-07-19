@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>temparature converter</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="index.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <div class="main">
+    <h1>Temparature Conversions</h1>
+
+  </div>
+
+  <div class="title">
+    <h1>Fahrenheit to Celsius</h1>
+    <p>Type a value in the Fahrenheit field to convert the value to Celsius:</p>
+    <p>
+      <label>Fahrenheit</label>
+      <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="FahrenheittoCelsius(this.value)" onchange="FahrenheittoCelsius(this.value)">
+    </p>
+    <p>Celsius: <span id="outputCelsius"></span></p>
+
+
+    <h1>Celsius to Fahrenheit</h1>
+    <p>Type a value in the Celsius field to convert the value to Fahrenheit:</p>
+
+    <p>
+      <label>Celsius</label>
+      <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+    </p>
+    <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+  </div>
+
+  <div class="second">
+    <h1>Celsius to Kelvin</h1>
+    <p>Type a value in the Celsius field to convert the value to Kelvin:</p>
+
+    <p>
+      <label>Celsius</label>
+      <input id="inputCelsius" type="number" placeholder="Celsius" oninput="CelsiustoKelvin(this.value)" onchange="CelsiustoKelvin(this.value)">
+    </p>
+    <p>Kelvin: <span id="outputKelvin"></span></p>
+
+
+
+    <h1>Kelvin to Celsius</h1>
+    <p>Type a value in the Kelvin field to convert the value to Celsius:</p>
+
+    <p>
+      <label>Kelvin</label>
+      <input id="inputKelvin" type="number" placeholder="Kelvin" oninput="KelvintoCelsius(this.value)" onchange="KelvintoCelsius(this.value)">
+    </p>
+    <p>Celcius: <span id="outputCelcius"></span></p>
+  </div>
+  <div class="third">
+    <h1>Kelvin to Fahrenheit</h1>
+    <p>Type a value in the Kelvin field to convert the value to Fahrenheit:</p>
+
+    <p>
+      <label>Kelvin</label>
+      <input id="inputKelvin" type="number" placeholder="Kelvin" oninput="KelvintoFahrenheit(this.value)" onchange="KelvintoFahrenheit(this.value)">
+    </p>
+    <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+
+    <h1>Fahrenheit to Kelvin</h1>
+    <p>Type a value in the Fahrenheit field to convert the value to Kelvin:</p>
+
+    <p>
+      <label>Fahrenheit</label>
+      <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="last(this.value)" onchange="last(this.value)">
+    </p>
+    <p>Kelvin: <span id="outputKelvin"></span></p>
+
+  </div>
+  <div class="leftbox">
+    <h2>about us</h2>
+    <div class="content">
+      <p>Every website should be built with two primary goals.Firstly, it needs
+        to work all devices. Secondly, it needs to be fast as possible.</p>
+      <p>@Copyright By Ganeshsai</p>
+
+    </div>
+  </div>
+</body>
+
+</html>
